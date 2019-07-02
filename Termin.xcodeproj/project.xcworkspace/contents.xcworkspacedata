@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../ekipa1.png">
+   </FileRef>
+   <FileRef
+      location = "group:../ekipa2.png">
+   </FileRef>
+   <FileRef
+      location = "group:../ekipa3.png">
+   </FileRef>
+   <FileRef
+      location = "group:../ekipa4.png">
+   </FileRef>
+   <FileRef
+      location = "group:../ekipa5.png">
+   </FileRef>
+   <FileRef
+      location = "group:../ekipa6.png">
+   </FileRef>
+   <FileRef
+      location = "group:../ekipa7.png">
+   </FileRef>
+   <FileRef
+      location = "group:../igrac1.png">
+   </FileRef>
+   <FileRef
+      location = "group:../igrac2.png">
+   </FileRef>
+   <FileRef
+      location = "group:../lopta1.png">
+   </FileRef>
+   <FileRef
+      location = "group:../lopta2.png">
+   </FileRef>
+   <FileRef
+      location = "group:../play2_50.png">
+   </FileRef>
+   <FileRef
+      location = "group:../play2_100.png">
+   </FileRef>
+   <FileRef
+      location = "group:../play50.png">
+   </FileRef>
+   <FileRef
+      location = "group:../play100.png">
+   </FileRef>
+   <FileRef
+      location = "group:../plus1.png">
+   </FileRef>
+   <FileRef
+      location = "group:../plus2.png">
+   </FileRef>
+   <FileRef
+      location = "group:../stadion1.png">
+   </FileRef>
+   <FileRef
+      location = "group:../stadion2.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
