@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/five/Downloads/Termin-master/Termin/CoreData/Game+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/five/Downloads/Termin-master/Termin/CoreData/Game+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/five/Downloads/Termin-master/Termin/CoreData/Player+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/five/Downloads/Termin-master/Termin/CoreData/Player+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:../ekipa1.png">
    </FileRef>
    <FileRef
