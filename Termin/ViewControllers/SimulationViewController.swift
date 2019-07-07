@@ -108,16 +108,29 @@ class SimulationViewController: UIViewController {
     
     @objc func onTapBack() {
         if gameStarted == false {
-            return
+            self.showAlert()
         }
-        onTapPause()
-        let alertController = UIAlertController(title: "Progress will be lost", message: "Are you sure you want to go back?", preferredStyle: .alert)
+        if gameEnded == false {
+            onTapPause()
+        }
+        let alertController = UIAlertController(title: "Data will be lost!", message: "Are you sure you want to go back?", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Yes", style: .default, handler:  { [weak self] _ in
             self?.navigationController?.popViewController(animated: true)
         }))
         alertController.addAction(UIAlertAction(title: "No", style: .default, handler: {[weak self] _ in
-            self?.onTapStart()
+            if self?.gameEnded == false {
+                self?.onTapStart()
+            }
         }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    private func showAlert() {
+        let alertController = UIAlertController(title: "Teams will be lost!", message: "Are you sure you want to go back?", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Yes", style: .default, handler:  { [weak self] _ in
+            self?.navigationController?.popViewController(animated: true)
+        }))
+        alertController.addAction(UIAlertAction(title: "No", style: .default))
         self.present(alertController, animated: true, completion: nil)
     }
 //    ----------TIMER----------
@@ -188,19 +201,19 @@ class SimulationViewController: UIViewController {
                                     "team1Result":Int32(team1Result),
                                     "team2Result":Int32(team2Result)]
         
-//        for player in players {
-//            if goalMinute.index(forKey: player) != nil {
-//                DataController.shared.updatePlayerGoals(key: player.name, goals: goalMinute[player]!.count)
-//            } else {
-//                DataController.shared.updatePlayerGoals(key: player.name, goals: 0)
-//            }
-//        }
-//
-//        for player in players {
-//            let playa = DataController.shared.searchPlayers(key: player.name)
-//            let playaer = playa!.first
-//            print("name-> \(String(describing: playaer?.name)) goals-> \(playaer?.goals) games-> \(String(describing: playaer?.games)) avgGoals-> \(String(describing: playaer?.avgGoals))")
-//        }
+        for player in players {
+            if goalMinute.index(forKey: player) != nil {
+                print(DataController.shared.updatePlayerGoals(key: player.name, goals: goalMinute[player]!.count))
+            } else {
+                print(DataController.shared.updatePlayerGoals(key: player.name, goals: 0))
+            }
+        }
+
+        for player in players {
+            let playa = DataController.shared.searchPlayers(key: player.name)
+            let playaer = playa!.first
+            print("name-> \(String(describing: playaer?.name)) goals-> \(playaer?.goals) games-> \(String(describing: playaer?.games)) avgGoals-> \(String(describing: playaer?.avgGoals))")
+        }
         
         UserDefaults.standard.set(id+1, forKey: "gameId")
         
@@ -253,7 +266,7 @@ extension SimulationViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if gameEnded == true || gameStarted == false{
+        if gameEnded == true || gameStarted == false || timerPaused == true{
             teamTable.deselectRow(at: indexPath, animated: false)
             return
         }

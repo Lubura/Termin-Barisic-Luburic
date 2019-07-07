@@ -87,7 +87,7 @@
                     </connections>
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFq-IM-HCH">
-                    <rect key="frame" x="143" y="459" width="104" height="100"/>
+                    <rect key="frame" x="143" y="459.5" width="104" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="mFq-IM-HCH" secondAttribute="height" multiplier="26:25" id="T1A-MI-cHf"/>
                         <constraint firstAttribute="width" constant="104" id="WsK-pg-ToX"/>

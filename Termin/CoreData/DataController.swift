@@ -73,16 +73,16 @@ class DataController {
         return players
     }
     
-//    func updatePlayerGoals(key: String, goals: Int) -> Bool {
-//        if let player: Player = self.searchPlayers(key: key)?.first {
-//            player.goals+=goals
-//            player.games+=1
-//            player.avgGoals = Float(player.goals)/Float(player.games)
-//            self.saveContext()
-//            return true
-//        }
-//        return false
-//    }
+    func updatePlayerGoals(key: String, goals: Int) -> Bool {
+        if let player: Player = self.searchPlayers(key: key)?.first {
+            player.goals+=goals
+            player.games+=1
+            player.avgGoals = Float(player.goals)/Float(player.games)
+            self.saveContext()
+            return true
+        }
+        return false
+    }
     
     func viewPlayerDetails(key: String) -> [String:Any]? {
         if let player: Player = self.searchPlayers(key: key)?.first {

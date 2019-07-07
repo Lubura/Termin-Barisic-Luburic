@@ -34,7 +34,7 @@ class PickPlayersViewController: UIViewController {
     }
     
     @objc func onTapGoToSimulation() {
-        if selectedPlayers.count < 1 {
+        if selectedPlayers.count < 10 {
             self.showAlert()
         }
         let simulationVC = SimulationOptionsViewController(players: selectedPlayers)
