@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimulationViewController" customModule="Termin" customModuleProvider="target">
+            <connections>
+                <outlet property="scoreLabel" destination="cwz-yP-cSk" id="1Vf-P7-2Xt"/>
+                <outlet property="teamTable" destination="Wuf-Rz-ESh" id="p63-Dn-0dJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wuf-Rz-ESh">
+                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 - 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwz-yP-cSk">
+                    <rect key="frame" x="0.0" y="30" width="375" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wuf-Rz-ESh" secondAttribute="trailing" id="3gG-WP-SLY"/>
+                <constraint firstAttribute="bottom" secondItem="Wuf-Rz-ESh" secondAttribute="bottom" id="70r-zi-c9f"/>
+                <constraint firstItem="cwz-yP-cSk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NJQ-27-Ohh"/>
+                <constraint firstItem="Wuf-Rz-ESh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Om4-VU-n81"/>
+                <constraint firstAttribute="trailing" secondItem="cwz-yP-cSk" secondAttribute="trailing" id="YAA-eG-DXV"/>
+                <constraint firstItem="cwz-yP-cSk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="bXe-J6-PIN"/>
+                <constraint firstItem="Wuf-Rz-ESh" firstAttribute="top" secondItem="cwz-yP-cSk" secondAttribute="bottom" constant="10" id="nKb-5v-egj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-791" y="113"/>
+        </view>
+    </objects>
+</document>

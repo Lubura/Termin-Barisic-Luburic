@@ -19,6 +19,7 @@ struct PickPlayersCellData {
 class PickPlayersTableViewCell: UITableViewCell {
 
     @IBOutlet weak var playerLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

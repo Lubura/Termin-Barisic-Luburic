@@ -18,11 +18,20 @@ class TabBarViewController: UITabBarController {
         tabBar.tintColor = UIColor.orange
         tabBar.unselectedItemTintColor = .white
         
-        let pokreniVC = PokreniViewController()
-        let pokreniTabBarItem = UITabBarItem(title: "pokreni", image: UIImage(named: "stadion1"), tag: 0)
-        pokreniVC.tabBarItem = pokreniTabBarItem
+//        simulation
+        let pickPlayersViewModel = PickPlayersViewModel()
+        let pickPlayersVC = PickPlayersViewController(viewModel: pickPlayersViewModel)
+        let simulationNavigationController = UINavigationController(rootViewController: pickPlayersVC)
         
-        viewControllers = [pokreniVC]
+        simulationNavigationController.navigationBar.tintColor = UIColor.white
+        simulationNavigationController.navigationBar.barTintColor = UIColor.orange
+        let textAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        simulationNavigationController.navigationBar.titleTextAttributes = textAttributes
+        
+        let simulationTabBarItem = UITabBarItem(title: "Play", image: UIImage(named: "stadion1"), tag: 0)
+        simulationNavigationController.tabBarItem = simulationTabBarItem
+        
+        viewControllers = [simulationNavigationController]
         selectedIndex = 0
     }
 

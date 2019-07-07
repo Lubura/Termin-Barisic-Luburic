@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-//        window?.rootViewController = PokreniViewController()
         window?.rootViewController = TabBarViewController()
         window?.makeKeyAndVisible()
         return true
