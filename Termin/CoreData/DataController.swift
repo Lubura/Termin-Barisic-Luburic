@@ -34,6 +34,16 @@ class DataController {
         return players
     }
     
+    func fetchGames() -> [Game]? {
+        let request: NSFetchRequest<Game> = Game.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+        let context = DataController.shared.persistentContainer.viewContext
+       
+        let games = try? context.fetch(request)
+        return games
+       
+    }
+    
     func searchGames(key: Int) -> [Game]? {
         let request: NSFetchRequest<Game> = Game.fetchRequest()
         if key <= 0{

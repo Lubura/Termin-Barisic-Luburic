@@ -18,7 +18,7 @@ class PickPlayersViewModel {
         completion()
     }
     
-    func searchQuizList(name: String) {
+    func searchPlayersList(name: String) {
         self.items = DataController.shared.searchPlayers(key: name)
     }
     
@@ -32,10 +32,10 @@ class PickPlayersViewModel {
     }
     
     func pickPlayersCellData(atIndexPath indexPath: IndexPath) -> PickPlayersCellData? {
-        guard items != nil else {
+        guard let items = self.items else {
             return nil
         }
-        let player = items![indexPath.row]
+        let player = items[indexPath.row]
         return PickPlayersCellData(name: player.name)
     }
     

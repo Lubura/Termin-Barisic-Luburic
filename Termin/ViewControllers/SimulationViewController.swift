@@ -200,6 +200,11 @@ class SimulationViewController: UIViewController {
                                     "team2":team2,
                                     "team1Result":Int32(team1Result),
                                     "team2Result":Int32(team2Result)]
+        if let game =  Game.createFrom(json: json){
+            print(game)
+        }else{
+            print("neuspješno sejvanje utakmice")
+        }
         
         for player in players {
             if goalMinute.index(forKey: player) != nil {

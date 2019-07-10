@@ -24,7 +24,6 @@
 		4CDB2C1522CFC1C0007C776E /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB2C1422CFC1C0007C776E /* PlayerViewModel.swift */; };
 		4CDB2C1722CFE447007C776E /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB2C1622CFE447007C776E /* GameViewModel.swift */; };
 		4CDB2C1922D00745007C776E /* ImportDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB2C1822D00745007C776E /* ImportDataService.swift */; };
-		4CDB2C2322D02719007C776E /* playersHuligani.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB2C2222D02719007C776E /* playersHuligani.json */; };
 		4CDB2C2622D0D4A7007C776E /* SimulationOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB2C2422D0D4A7007C776E /* SimulationOptionsViewController.swift */; };
 		4CDB2C2722D0D4A7007C776E /* SimulationOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB2C2522D0D4A7007C776E /* SimulationOptionsViewController.xib */; };
 		4CDB2C2A22D110B1007C776E /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB2C2822D110B1007C776E /* SimulationViewController.swift */; };
@@ -55,6 +54,14 @@
 		522F2EE322CBBF4300A5EE41 /* lopta1.png in Resources */ = {isa = PBXBuildFile; fileRef = 522F2ED022CBBF4200A5EE41 /* lopta1.png */; };
 		522F2EE422CBBF4300A5EE41 /* play50.png in Resources */ = {isa = PBXBuildFile; fileRef = 522F2ED122CBBF4200A5EE41 /* play50.png */; };
 		522F2EE522CBBF4300A5EE41 /* ekipa5.png in Resources */ = {isa = PBXBuildFile; fileRef = 522F2ED222CBBF4300A5EE41 /* ekipa5.png */; };
+		522F2EEF22D5F3D300A5EE41 /* playersHuligani.json in Resources */ = {isa = PBXBuildFile; fileRef = 522F2EEE22D5F3D300A5EE41 /* playersHuligani.json */; };
+		522F2EF222D62F6000A5EE41 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EF022D62F6000A5EE41 /* GamesViewController.swift */; };
+		522F2EF322D62F6000A5EE41 /* GamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F2EF122D62F6000A5EE41 /* GamesViewController.xib */; };
+		522F2EF622D62FE800A5EE41 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EF422D62FE800A5EE41 /* GameTableViewCell.swift */; };
+		522F2EF722D62FE800A5EE41 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F2EF522D62FE800A5EE41 /* GameTableViewCell.xib */; };
+		522F2EFA22D6312300A5EE41 /* OneGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EF822D6312300A5EE41 /* OneGameViewController.swift */; };
+		522F2EFB22D6312300A5EE41 /* OneGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F2EF922D6312300A5EE41 /* OneGameViewController.xib */; };
+		522F2EFD22D6480C00A5EE41 /* AllGamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EFC22D6480C00A5EE41 /* AllGamesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,7 +84,6 @@
 		4CDB2C1422CFC1C0007C776E /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		4CDB2C1622CFE447007C776E /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		4CDB2C1822D00745007C776E /* ImportDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportDataService.swift; sourceTree = "<group>"; };
-		4CDB2C2222D02719007C776E /* playersHuligani.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = playersHuligani.json; path = ../../playersHuligani.json; sourceTree = "<group>"; };
 		4CDB2C2422D0D4A7007C776E /* SimulationOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationOptionsViewController.swift; sourceTree = "<group>"; };
 		4CDB2C2522D0D4A7007C776E /* SimulationOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimulationOptionsViewController.xib; sourceTree = "<group>"; };
 		4CDB2C2822D110B1007C776E /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,14 @@
 		522F2ED022CBBF4200A5EE41 /* lopta1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lopta1.png; sourceTree = SOURCE_ROOT; };
 		522F2ED122CBBF4200A5EE41 /* play50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play50.png; sourceTree = SOURCE_ROOT; };
 		522F2ED222CBBF4300A5EE41 /* ekipa5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ekipa5.png; sourceTree = SOURCE_ROOT; };
+		522F2EEE22D5F3D300A5EE41 /* playersHuligani.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = playersHuligani.json; path = ../../../Desktop/playersHuligani.json; sourceTree = "<group>"; };
+		522F2EF022D62F6000A5EE41 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		522F2EF122D62F6000A5EE41 /* GamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesViewController.xib; sourceTree = "<group>"; };
+		522F2EF422D62FE800A5EE41 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		522F2EF522D62FE800A5EE41 /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
+		522F2EF822D6312300A5EE41 /* OneGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneGameViewController.swift; sourceTree = "<group>"; };
+		522F2EF922D6312300A5EE41 /* OneGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneGameViewController.xib; sourceTree = "<group>"; };
+		522F2EFC22D6480C00A5EE41 /* AllGamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGamesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +161,8 @@
 				4C65D21222C84704006F4282 /* Views */,
 				4C65D21122C846FB006F4282 /* CoreData */,
 				4C65D20522C846B5006F4282 /* Assets.xcassets */,
-				4CDB2C2222D02719007C776E /* playersHuligani.json */,
 				4CDB2C3822D167D3007C776E /* back.png */,
+				522F2EEE22D5F3D300A5EE41 /* playersHuligani.json */,
 				4CDB2C3622D14D92007C776E /* play25.png */,
 				4CDB2C3422D13AB5007C776E /* pause25.png */,
 				522F2EC722CBBF4000A5EE41 /* ekipa1.png */,
@@ -185,6 +199,10 @@
 				4CDB2C2522D0D4A7007C776E /* SimulationOptionsViewController.xib */,
 				4CDB2C2822D110B1007C776E /* SimulationViewController.swift */,
 				4CDB2C2922D110B1007C776E /* SimulationViewController.xib */,
+				522F2EF022D62F6000A5EE41 /* GamesViewController.swift */,
+				522F2EF122D62F6000A5EE41 /* GamesViewController.xib */,
+				522F2EF822D6312300A5EE41 /* OneGameViewController.swift */,
+				522F2EF922D6312300A5EE41 /* OneGameViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +228,8 @@
 				4CDB2C2C22D120F1007C776E /* SimulationTableViewCell.swift */,
 				4CDB2C2D22D120F1007C776E /* SimulationTableViewCell.xib */,
 				4CDB2C3222D12788007C776E /* SimulationTableHeader.swift */,
+				522F2EF422D62FE800A5EE41 /* GameTableViewCell.swift */,
+				522F2EF522D62FE800A5EE41 /* GameTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +241,7 @@
 				4CDB2C1422CFC1C0007C776E /* PlayerViewModel.swift */,
 				4CDB2C1622CFE447007C776E /* GameViewModel.swift */,
 				4CDB2C3022D12440007C776E /* SimulationViewModel.swift */,
+				522F2EFC22D6480C00A5EE41 /* AllGamesViewModel.swift */,
 			);
 			path = "View models";
 			sourceTree = "<group>";
@@ -289,10 +310,12 @@
 				522F2EDB22CBBF4300A5EE41 /* play100.png in Resources */,
 				4CDB2C2722D0D4A7007C776E /* SimulationOptionsViewController.xib in Resources */,
 				522F2EDF22CBBF4300A5EE41 /* ekipa4.png in Resources */,
+				522F2EFB22D6312300A5EE41 /* OneGameViewController.xib in Resources */,
 				522F2ED522CBBF4300A5EE41 /* ekipa7.png in Resources */,
 				522F2EE422CBBF4300A5EE41 /* play50.png in Resources */,
 				4C65D21A22C849CE006F4282 /* PickPlayersViewController.xib in Resources */,
 				4CDB2C3922D167D4007C776E /* back.png in Resources */,
+				522F2EF722D62FE800A5EE41 /* GameTableViewCell.xib in Resources */,
 				522F2ED622CBBF4300A5EE41 /* play2_50.png in Resources */,
 				522F2ED422CBBF4300A5EE41 /* plus2.png in Resources */,
 				522F2EE322CBBF4300A5EE41 /* lopta1.png in Resources */,
@@ -310,7 +333,8 @@
 				4CDB2C3722D14D92007C776E /* play25.png in Resources */,
 				522F2EE522CBBF4300A5EE41 /* ekipa5.png in Resources */,
 				522F2ED722CBBF4300A5EE41 /* stadion1.png in Resources */,
-				4CDB2C2322D02719007C776E /* playersHuligani.json in Resources */,
+				522F2EF322D62F6000A5EE41 /* GamesViewController.xib in Resources */,
+				522F2EEF22D5F3D300A5EE41 /* playersHuligani.json in Resources */,
 				522F2EDC22CBBF4300A5EE41 /* ekipa3.png in Resources */,
 				522F2ED922CBBF4300A5EE41 /* stadion2.png in Resources */,
 			);
@@ -327,15 +351,19 @@
 				4C65D21622C847FF006F4282 /* TabBarViewController.swift in Sources */,
 				4C65D21922C849CE006F4282 /* PickPlayersViewController.swift in Sources */,
 				4CDB2C1222CFB38E007C776E /* Game+CoreDataClass.swift in Sources */,
+				522F2EF222D62F6000A5EE41 /* GamesViewController.swift in Sources */,
 				4CDB2C1522CFC1C0007C776E /* PlayerViewModel.swift in Sources */,
 				4CDB2C2E22D120F1007C776E /* SimulationTableViewCell.swift in Sources */,
+				522F2EFA22D6312300A5EE41 /* OneGameViewController.swift in Sources */,
 				4CDB2C1022CFB38E007C776E /* Player+CoreDataClass.swift in Sources */,
 				4CDB2C3122D12440007C776E /* SimulationViewModel.swift in Sources */,
+				522F2EFD22D6480C00A5EE41 /* AllGamesViewModel.swift in Sources */,
 				4CDB2C1722CFE447007C776E /* GameViewModel.swift in Sources */,
 				4CDB2C1922D00745007C776E /* ImportDataService.swift in Sources */,
 				4CDB2C1322CFB38E007C776E /* Game+CoreDataProperties.swift in Sources */,
 				4C65D29E22CBA8EB006F4282 /* PickPlayersTableViewCell.swift in Sources */,
 				4C65D25D22C8516D006F4282 /* PickPlayersViewModel.swift in Sources */,
+				522F2EF622D62FE800A5EE41 /* GameTableViewCell.swift in Sources */,
 				4CDB2C3322D12788007C776E /* SimulationTableHeader.swift in Sources */,
 				4CDB2C1122CFB38E007C776E /* Player+CoreDataProperties.swift in Sources */,
 				4C65D25F22C853A9006F4282 /* DataController.swift in Sources */,

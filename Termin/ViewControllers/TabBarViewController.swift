@@ -31,7 +31,11 @@ class TabBarViewController: UITabBarController {
         let simulationTabBarItem = UITabBarItem(title: "Play", image: UIImage(named: "stadion1"), tag: 0)
         simulationNavigationController.tabBarItem = simulationTabBarItem
         
-        viewControllers = [simulationNavigationController]
+        let vm = AllGamesViewModel()
+        let gamesVC = GamesViewController(viewModel: vm)
+        gamesVC.tabBarItem = UITabBarItem(title: "All Games", image: nil, tag: 0)
+        
+        viewControllers = [simulationNavigationController, gamesVC]
         selectedIndex = 0
     }
 
